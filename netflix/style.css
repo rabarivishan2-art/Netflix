@@ -1,0 +1,148 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.nav-links li:hover {
+    opacity: 1;
+}
+
+/* HERO BANNER */
+.hero {
+    height: 70vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+        url('https://bsmedia.business-standard.com/_media/bs/img/article/2025-03/12/full/1741760980-2754.png?im=FitAndFill=(826,465)') center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 50px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    font-weight: 900;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+
+.btn {
+    padding: 12px 25px;
+    margin-right: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+.btn-light {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* MOVIE ROWS */
+.movies {
+    padding: 20px 50px;
+}
+
+.movies h2 {
+    margin-bottom: 10px;
+}
+
+.movie-row {
+    display: flex;
+    gap: 50px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    overflow-x: scroll;
+}
+
+.movie-row img {
+    width: 250px;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.movie-row img:hover {
+    transform: scale(1.25);
+}
+
+
+/* -------------------------------------- */
+/* RESPONSIVE (MOBILE & TABLET) */
+/* -------------------------------------- */
+@media (max-width: 1028px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 20px;
+        height: 60vh;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .movie-row img {
+        width: 150px;
+    }
+}
